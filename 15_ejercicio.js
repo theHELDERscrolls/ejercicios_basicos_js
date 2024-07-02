@@ -11,7 +11,6 @@ const products = [
   "AC/DC Camiseta",
 ];
 
-// recorremos el array u almacenamos en "product" el valor
 for (const product of products) {
   // si ese valor "product" incluye "Camiseta"...
   if (product.includes("Camiseta")) {

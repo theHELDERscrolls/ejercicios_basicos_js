@@ -11,3 +11,5 @@ function greaterNumber(numberOne, numberTwo) {
 
 greaterNumber(19, 5);
 greaterNumber(4, 9);
+console.log(greaterNumber(19, 5));
+console.log(greaterNumber(4, 9));

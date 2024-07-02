@@ -16,12 +16,11 @@ const toys = [
 // Creamos un array para los juguets sin "gato"
 const toysFilter = [];
 
-// Recorremos el array y almacenamos el valor en "key".
-for (const key of toys) {
-  // Si el name de key NO (!) tiene "gato"...
-  if (!key.name.includes("gato")) {
+for (const toy of toys) {
+  // Si el name de toy NO (!) tiene "gato"...
+  if (!toy.name.includes("gato")) {
     // ... añádelo al nuevo array
-    toysFilter.push(key);
+    toysFilter.push(toy);
   }
 }
 

@@ -15,11 +15,11 @@ const users = [
 const over18 = [];
 const under18 = [];
 
-for (const key of users) {
-  if (key.years >= 18) {
-    over18.push(key.name);
+for (const user of users) {
+  if (user.years >= 18) {
+    over18.push(user.name);
   } else {
-    under18.push(key.name);
+    under18.push(user.name);
   }
 }
 

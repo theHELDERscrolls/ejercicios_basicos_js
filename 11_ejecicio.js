@@ -20,6 +20,7 @@ function averageWord(list) {
   let sumLetter = 0;
 
   for (const element of list) {
+    // typeof para diferenciar los elemenetos number y string del array y aplicarles lo indicado.
     if (typeof element === "number") {
       sumNumber += element;
     } else if (typeof element === "string") {

@@ -17,14 +17,13 @@ const duplicates = [
   "soda",
 ];
 
-const onlyOne = []; // array para almacenar sin los duplicados.
+const onlyOne = []; // array para almacenar sin duplicar.
 
 function removeDuplicates(list) {
-  // leemos el array entero.
   for (let i = 0; i < list.length; i++) {
     if (onlyOne.includes(list[i])) {
       console.log("se repite " + list[i]);
-      //si está incluido en "onlyOne" saca esto por consola.
+      // si está incluido en "onlyOne" saca esto por consola.
     } else {
       onlyOne.push(list[i]);
       // si no está incluido en "onlyOne", añádelo.

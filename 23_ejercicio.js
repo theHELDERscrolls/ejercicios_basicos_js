@@ -22,13 +22,13 @@ const little = [];
 const medium = [];
 const big = [];
 
-for (const key of movies) {
-  if (key.durationInMinutes < 100) {
-    little.push(key.name);
-  } else if (key.durationInMinutes >= 100 && key.durationInMinutes < 200) {
-    medium.push(key.name);
-  } else if (key.durationInMinutes >= 200) {
-    big.push(key.name);
+for (const movie of movies) {
+  if (movie.durationInMinutes < 100) {
+    little.push(movie.name);
+  } else if (movie.durationInMinutes >= 100 && movie.durationInMinutes < 200) {
+    medium.push(movie.name);
+  } else if (movie.durationInMinutes >= 200) {
+    big.push(movie.name);
   }
 }
 

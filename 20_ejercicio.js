@@ -18,12 +18,11 @@ const toys = [
   { id: 110, name: "Troll Doll", sellCount: 20 },
 ];
 
-// Recorremos el array y guardamos el valor en "key".
-for (const key of toys) {
+for (const toy of toys) {
   // Si el "sellCount" del objeto es mayor que 15...
-  if (key.sellCount > 15) {
+  if (toy.sellCount > 15) {
     // ... añádelo a "popularToys".
-    popularToys.push(key);
+    popularToys.push(toy);
   }
 }
 
