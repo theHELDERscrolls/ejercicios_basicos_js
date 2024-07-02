@@ -9,16 +9,14 @@ const avengers = [
 ];
 
 function findLongestWord(stringList) {
-  let longest = stringList[0]; // 1º elem. del array es el más grande.
-  for (i = 1; i < stringList.length; i++) // recorro array a partir de 2º elem. 
-  { 
-    if (stringList[i].length > longest.length) // si el nuevo elem. es más largo que el indicado...
-    { 
-      longest = stringList[i]; // ... pasará a ser el nuevo elemento más largo.
+  let longestWord = "";
+  for (i = 0; i < stringList.length; i++) {
+    const string = stringList[i];
+    if (string.length > longestWord.length) {
+      longestWord = string;
     }
   }
-  return longest;
+  console.log("La palabra más larga es: " + longestWord);
 }
 
 findLongestWord(avengers);
-console.log(findLongestWord(avengers));

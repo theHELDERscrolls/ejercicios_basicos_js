@@ -15,20 +15,18 @@ const mixedElements = [
   "Hola mundo",
 ];
 
-function averageWord(list) {
-  let sumNumber = 0;
-  let sumLetter = 0;
+function average(list) {
+  let total = 0;
 
   for (const element of list) {
-    // typeof para diferenciar los elemenetos number y string del array y aplicarles lo indicado.
     if (typeof element === "number") {
-      sumNumber += element;
-    } else if (typeof element === "string") {
-      sumLetter += element.length;
+      total += element;
+    } else {
+      total += element.length;
     }
   }
-  console.log("Suma de números: " + sumNumber);
-  console.log("Suma de letras: " + sumLetter);
+  const promedio = total / list.length;
+  console.log(promedio);
 }
 
-averageWord(mixedElements);
+average(mixedElements);

@@ -1,6 +1,6 @@
 // 01. Luke Skywalker cumple años.
 const jedi = { nombre: "Luke Skywalker", edad: 19 };
-// const jedi = { nombre: "Luke Skywalker", edad: 25 };
+jedi.edad = 25;
 
 // 02. Presentación al estilo Leia Organa.
 const name = "Leia";
