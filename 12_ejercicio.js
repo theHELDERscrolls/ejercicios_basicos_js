@@ -20,16 +20,16 @@ const duplicates = [
 const onlyOne = []; // array para almacenar sin duplicar.
 
 function removeDuplicates(list) {
-  for (let i = 0; i < list.length; i++) {
-    if (onlyOne.includes(list[i])) {
-      console.log("se repite " + list[i]);
+  for (const item of list) {
+    if (onlyOne.includes(item)) {
+      console.log("se repite " + item);
       // si está incluido en "onlyOne" saca esto por consola.
     } else {
-      onlyOne.push(list[i]);
+      onlyOne.push(item);
       // si no está incluido en "onlyOne", añádelo.
     }
   }
+  console.log("Aquí tienes la lista sin duplicados: " + onlyOne);
 }
 
 removeDuplicates(duplicates);
-console.log(onlyOne);

@@ -17,7 +17,7 @@ const names = [
   "Marc",
 ];
 
-const searchName = "Tony";
+const searchName = "Logan";
 
 function nameFinder(nameList) {
   // Buscamos en la lista el nombre igual al introducido en "searchName".
