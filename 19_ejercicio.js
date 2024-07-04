@@ -13,13 +13,10 @@ const toys = [
   { id: 71, name: "Sylvanian Families - Familia gato" },
 ];
 
-// Creamos un array para los juguets sin "gato"
 const toysFilter = [];
 
 for (const toy of toys) {
-  // Si el name de toy NO (!) tiene "gato"...
   if (!toy.name.includes("gato")) {
-    // ... añádelo al nuevo array
     toysFilter.push(toy);
   }
 }

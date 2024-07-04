@@ -12,9 +12,7 @@ const products = [
 ];
 
 for (const product of products) {
-  // si ese valor "product" incluye "Camiseta"...
-  if (product.includes("Camiseta")) {
-    // ... muéstralo en consola.
+  if (product.toLowerCase().includes("Camiseta".toLowerCase())) {
     console.log(product);
   }
 }

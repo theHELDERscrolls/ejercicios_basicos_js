@@ -19,9 +19,7 @@ const toys = [
 ];
 
 for (const toy of toys) {
-  // Si el "sellCount" del objeto es mayor que 15...
   if (toy.sellCount > 15) {
-    // ... añádelo a "popularToys".
     popularToys.push(toy);
   }
 }

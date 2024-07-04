@@ -17,13 +17,16 @@ const words = [
 ];
 
 function repeatCounter(list) {
-  const counts = {}; // objeto para almacenar las palabras y nº de repeticiones.
+  const counts = {};
+
   for (const word of list) {
-    /* Si la palabra se encuentra en counts o tiene un valor de 0 en counts (no está)
-    súmale +1 */
-    counts[word] = (counts[word] || 0) + 1;
+    if (counts[word]) {
+      counts[word]++;
+    } else {
+      counts[word] = 1;
+    }
   }
-  return counts;
+  console.log(counts);
 }
 
-console.log(repeatCounter(words));
+repeatCounter(words);
